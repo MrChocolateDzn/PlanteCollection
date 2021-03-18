@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">NatureCollection</string>
+
+    <string name="bottom_home_item">Accueil</string>
+    <string name="bottom_collection_item">Collection</string>
+    <string name="bottom_add_plant_item">Ajouter</string>
+    <!-- Page d'accueil -->
+    <string name="home_page_title">A découvrir</string>
+    <string name="home_page_last_plant_section">Dernières plantes</string>
+
+    <!-- Page de Collection -->
+    <string name="collection_page_title">Ma collection</string>
+
+    <!-- Page d'Ajout de plante -->
+    <string name="add_plant_page_title">Ajout d\'une plante</string>
+    <string name="add_plant_upload_button">Charger Image</string>
+    <string name="add_plant_page_name_input">@string/home_page_plant_name</string>
+    <string name="add_plant_page_description_input">@string/home_page_plant_description</string>
+
+    <string-array name="add_plant_page_grow_spinner_input">
+        <item>Croissance : Lente</item>
+        <item>Croissance : Moyenne</item>
+        <item>Croissance : Rapide</item>
+    </string-array>
+
+    <string-array name="add_plant_page_water_spinner_input">
+        <item>Consommation : Basse</item>
+        <item>Consommation : Moyenne</item>
+        <item>Consommation : Elevée</item>
+    </string-array>
+
+    <string name="add_plant_confirm_button">Confirmer</string>
+
+    <!-- Fenetre popup de détails -->
+    <string name="popup_plant_name">Plant name</string>
+    <string name="popup_plant_description_title">Description</string>
+    <string name="popup_plant_description_subtitle">Petite description</string>
+    <string name="popup_plant_grow_title">Croissance</string>
+    <string name="popup_plant_grow_subtitle">Lente</string>
+    <string name="popup_plant_water_title">Consommation Eau</string>
+    <string name="popup_plant_water_subtitle">Basse</string>
+
+
+    <!-- Plante custom -->
+    <string name="home_page_plant_name">Nom de la plante</string>
+    <string name="home_page_plant_description">Description de la plante</string>
+</resources>
