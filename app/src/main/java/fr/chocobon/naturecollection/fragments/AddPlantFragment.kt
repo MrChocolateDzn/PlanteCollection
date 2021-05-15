@@ -33,6 +33,10 @@ class AddPlantFragment(
 
         val pickupImageButton = view.findViewById<Button>(R.id.upload_button)
 
+        //Selection de l'image par default
+
+        file = Uri.parse("android.resource://fr.chocobon.naturecollection/"+ R.drawable.trending2)
+
         //Lorsqu'on clique dessus ça ouvre les images du telephone
         pickupImageButton.setOnClickListener{pickupImage()}
 
@@ -44,7 +48,7 @@ class AddPlantFragment(
 
     private fun sendForm(view: View) {
         val repo = PlantRepository()
-        repo.uploadImage(file!!){
+        repo.uploadImage(file){
             val plantName = view.findViewById<EditText>(R.id.name_input).text.toString()
             val plantDescription = view.findViewById<EditText>(R.id.description_input).text.toString()
             val grow = view.findViewById<Spinner>(R.id.grow_spinner).selectedItem.toString()
@@ -82,7 +86,7 @@ class AddPlantFragment(
             if(data == null || data.data == null) return
 
             //Recuperer l'image
-            val file = data.data
+            file = data.data
 
             //Mettre à jour l'apercu
             uploadedImage?.setImageURI(file)

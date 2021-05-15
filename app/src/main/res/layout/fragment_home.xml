@@ -26,6 +26,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginBottom="100dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 

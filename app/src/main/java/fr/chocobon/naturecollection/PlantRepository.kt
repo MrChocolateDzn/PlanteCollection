@@ -63,7 +63,7 @@ class PlantRepository {
         })
     }
     //Creer une fonction pour envoyer des fichiers sur le storage
-    fun uploadImage(file: Uri,callback: () -> Unit){
+    fun uploadImage(file: Uri?, callback: () -> Unit){
         //Verifier que ce fichier n'est pas null
         if(file !=null){
             val fileName = UUID.randomUUID().toString() + ".jpg"
